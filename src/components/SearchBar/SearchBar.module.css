@@ -1,0 +1,38 @@
+.header {
+  position: sticky;
+  top: -1px;
+  padding: 1.25rem 0;
+  background-color: cornflowerblue;
+  box-shadow: var(--shadow-md);
+}
+.form {
+  display: flex;
+  min-width: 375px;
+  max-width: 900px;
+  width: 90vw;
+  margin-inline: auto;
+  background-color: #fff;
+  overflow: hidden;
+  transition: var(--trns);
+  transition-property: box-shadow;
+
+  &:focus-within {
+    box-shadow: 0 0 0 4px rgb(var(--cl-light));
+  }
+}
+.field {
+  flex-grow: 1;
+  padding: 1rem 1.5rem;
+}
+.btn {
+  padding: 1rem 2rem;
+  background-color: rgb(var(--cl-accent) / 40%);
+  transition: var(--trns);
+  transition-property: background-color, color;
+
+  &:hover,
+  &:focus {
+    background-color: rgb(var(--cl-accent) / 80%);
+    color: rgb(var(--cl-white));
+  }
+}

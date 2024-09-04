@@ -1,0 +1,14 @@
+.btn {
+  display: block;
+  padding: 1rem 1.75rem;
+  margin-inline: auto;
+  background-color: rgb(var(--cl-accent) / 40%);
+  transition: var(--trns);
+  transition-property: background-color, color;
+
+  &:hover,
+  &:focus {
+    color: rgb(var(--cl-white));
+    background-color: rgb(var(--cl-accent) / 80%);
+  }
+}
